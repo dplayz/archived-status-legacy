@@ -1,0 +1,141 @@
+title: World of SteelCraft Service Status
+languageCode: en
+defaultContentLanguage: en
+baseURL: https://status.dplayzgames06.tk
+params:
+  categories:
+    - name: Website
+      description: The main website are located here.
+      closed: false
+    - name: Workstation
+      description: The workstation worker are located here.
+      closed: false
+    - name: Other Services
+      description: The other services are located here.
+      closed: false
+  systems:
+    - name: Main Website
+      description: The web frontend for the application.
+      category: Website
+      link: https://dplayzgames06.tk
+    - name: Workstation Service
+      description: The workstation worker.
+      category: Workstation
+    - name: File Server
+      description: The file server of dplayz Games based on Google Drive
+      category: Other Services
+    - name:	Link Service
+      description: This is the service responsible for simple links for just redirecting users.
+      category: Other Services
+  # Tabs on homepage
+  customTabs:
+    - name: Uptime Monitoring
+      link: /uptime
+  dateFormat: January 2, 2006 at 3:04 PM UTC
+  shortDateFormat: 15:04 UTC — Jan 2
+  useRelativeTime: true
+  skipSeconds: false
+  enableLastMod: true
+  useLargeHeaderDesign: true
+  incidentHistoryFormat: "monthly"
+  disableIncidentHistory: false
+  disableDarkMode: true
+  useLogo: true
+  logo: /images/logo.png
+
+  # This is the description that is shown
+  # on the footer and meta tags.
+  #
+  # Default: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
+  description: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
+
+  # Disable complex server-side
+  # calculations that may impact
+  # your build performance
+  #
+  # Disables math calculations
+  # for average downtime on
+  # systems ("/affected/") pages
+  #
+  # Default: `false`
+  # BOOLEAN; `true`, `false`
+  disableComplexCalculations: false
+
+  incidentPostsPerPage: 10
+
+  # Colors throughout cState
+  #
+  # We recommend using HEX
+  # (with the # symbol).
+  #
+  # Defaults:
+  #
+  # brand: "#0a0c0f"
+  # ok: "#008000"
+  # disrupted: "#cc4400"
+  # down: "#e60000"
+  # notice: "#24478f"
+  brand: "#0810ba"
+  ok: "#008000"
+  disrupted: "#cc4400"
+  down: "#e60000"
+  notice: "#24478f"
+
+  # If the status page shows that
+  # there are disruptions or outages
+  # happening, should it keep the
+  # brand header color or drop it
+  # and use the status indication
+  # colors that were just defined?
+  #
+  # Default: `true`
+  # BOOLEAN; `true`, `false`
+  alwaysKeepBrandColor: false
+
+  # Introduced in v4.0.1 for consistent
+  # site title text color.
+  #
+  # If you do not use the logo, what color
+  # should the site text color be?
+  #
+  # Removing this option will not force
+  # any site text color. This is likely
+  # unwanted behavior.
+  #
+  # Default: `white`
+  # STRING; `white`, `black`, or nothing
+  headerTextColor: white
+
+# These options affect the core of cState.
+# Please do not change them if you do not
+# know what you are doing.
+theme: cstate
+
+preserveTaxonomyNames: true
+
+taxonomies:
+  affected: affected
+
+outputs:
+  page:
+    - html
+    - json
+  section:
+    - html
+    - json
+    - rss
+  home:
+    - html
+    - json
+    - rss
+    - svg
+  term:
+    - html
+    - json
+    - rss
+    - svg
+
+outputFormats:
+  svg:
+    isPlainText: true
+    mediaType: image/svg+xml
