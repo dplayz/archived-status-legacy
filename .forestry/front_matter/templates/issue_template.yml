@@ -66,11 +66,13 @@ fields:
       type: simple
     options:
     - Main Website
-    - WoSC SMP Server
-    - WoSC Files
-    - WoSC Link Service 1
-    - WoSC Link Service 2
+    - Workstation Service
+    - File Server
+    - Link Service
   label: Affected Services
+  showOnly:
+    field: resolved
+    value: false
 - name: informational
   type: boolean
   label: Informational
