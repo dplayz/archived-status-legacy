@@ -139,3 +139,9 @@ outputFormats:
   svg:
     isPlainText: true
     mediaType: image/svg+xml
+
+server:
+  headers:
+  - for: /*.json
+    values:
+      Access-Control-Allow-Origin: "*"
